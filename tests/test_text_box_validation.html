@@ -1,0 +1,36 @@
+
+            <form class="form-horizontal form-validate" role="form">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <strong>XWT Input Text - Validation</strong><br><br>
+                    </div>
+                    <label for="inputIP" class="col-sm-2 control-label">Type
+                        IPv4 Address</label>
+                    <div class="col-sm-4 field">
+                        <input type="text" class="form-control" id="inputIP" rel="ipv4"
+                               data-title="Please provide valid ip address" pattern="^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" placeholder="IP Address" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-sm-2 control-label">Type
+                        Email</label>
+                    <div class="col-sm-4 field">
+                        <input type="email" class="form-control" id="inputEmail" rel="email"
+                               data-title="Please provide valid email" placeholder="Email Address" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputNumber" class="col-sm-2 control-label">Type
+                        Number</label>
+                    <div class="col-sm-4 field">
+                        <input type="text" class="form-control" id="inputNumber" rel="number"
+                               data-title="Please provide valid number" pattern="^\d+$" placeholder="Number" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                        <input class="btn btn-primary" type="submit" name="submit" value="Submit" formnovalidate>
+                    </div>
+                </div>
+            </form>

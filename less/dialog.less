@@ -1,0 +1,68 @@
+.xwtDialog{
+	.modal-dialog {
+		cursor: default !important;
+		
+		.modal-content {
+			background: none repeat scroll 0 0 #FFFFFF;
+		    border: 0.1rem solid #B4B4B4;
+		    border-radius: 0.3rem;
+		    box-shadow: 0 0 0.3rem 0 #646464;
+			position: relative;
+		}
+		.modal-header {
+			background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+		    cursor: move;
+		    height: 3.2rem;
+		    line-height: 1.7rem;
+		    outline: 0 none;
+		    padding: 1.5rem 1.5rem 0rem;
+			border-bottom: none;
+			.close {
+				margin-top: 0;
+				float: right;
+			    white-space: nowrap;
+			}
+		}
+		.modal-title {
+			color: #646464;
+		    float: left;
+		    font-family: CiscoSansRegular,Arial;
+		    font-size: 2rem;
+		    font-weight: normal;
+		    margin-right: 10rem;
+			line-height: 1;
+			width: 43rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.modal-footer {
+			margin-top: 0;
+			border-top: none;
+			background-color: #FFFFFF;
+		    padding: 0.5rem 1.5rem 1.5rem;
+		    text-align: right;
+		}
+		.modal-body {
+			padding: 1.5rem;
+		}
+		.close:before {	
+			content: "\E002";
+			font-family: icon-font;
+		}
+		.close{	
+			cursor: pointer;
+			position: absolute;
+			vertical-align: middle;
+			position: relative;
+			font-size: 1.6rem;
+			margin-left: 1.2rem;
+			color: #969696;
+			opacity: 1;
+			text-shadow: 0;
+			&:hover {
+				color: #74bad1;
+			}
+		}
+	}
+}

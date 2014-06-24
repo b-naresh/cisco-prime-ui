@@ -1,0 +1,606 @@
+
+/* We need to fix dijit reset font families for font-awesome*/
+.dijitReset [class^="icon-"],
+.dijitReset [class*=" icon-"] {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  font-size: 1.6rem;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	font-size: 1.6rem;
+}
+
+
+.dijitReset [class^="icon-"]:before,
+.dijitReset [class*=" icon-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+/* These are the new icons created for Evolution */
+
+@font-face {
+	font-family: 'icon-font';
+	src:url('Evolution/icon-font.woff?version=0.0.21') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'icon-font';
+		src: url('Evolution/icon-font.woff?version=0.0.21') format('woff');
+	}
+}
+
+[data-icon]:before {
+	font-family: 'icon-font';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Here are the content codes for each of the Evolution font icons */
+.icon-ring:before {
+	content: "\e002";
+}
+.icon-deskPhone:before {
+	content: "\e003";
+}
+.icon-alarm:before {
+	content: "\e004";
+}
+.icon-delete:before {
+	content: "\e005";
+}
+.icon-fourWayNav:before {
+	content: "\e006";
+}
+.icon-folder:before {
+	content: "\e007";
+}
+.icon-move:before {
+	content: "\e008";
+}
+.icon-phoneKeypad:before {
+	content: "\e009";
+}
+.icon-back:before {
+	content: "\e00a";
+}
+.icon-mergeCall:before {
+	content: "\e00b";
+}
+.icon-video:before {
+	content: "\e00c";
+}
+.icon-help:before {
+	content: "\e00d";
+}
+.icon-alertCritical:before {
+	content: "\e00e";
+}
+.icon-indefiniteWait:before {
+	content: "\e00f";
+}
+.icon-accessories:before {
+	content: "\e010";
+}
+.icon-address:before {
+	content: "\e011";
+}
+.icon-admin:before {
+	content: "\e012";
+}
+.icon-mute:before {
+	content: "\e013";
+}
+.icon-usb:before {
+	content: "\e014";
+}
+.icon-bluetooth:before {
+	content: "\e015";
+}
+.icon-bluetoothAdd:before {
+	content: "\e016";
+}
+.icon-bluetoothConnected:before {
+	content: "\e017";
+}
+.icon-bluetoothDisconnected:before {
+	content: "\e018";
+}
+.icon-trash:before {
+	content: "\e019";
+}
+.icon-brokenImage:before {
+	content: "\e01a";
+}
+.icon-Calendar:before {
+	content: "\e01b";
+}
+.icon-parked:before {
+	content: "\e01c";
+}
+.icon-phoneInformation:before {
+	content: "\e01d";
+}
+.icon-certified:before {
+	content: "\e01e";
+}
+.icon-dnd:before {
+	content: "\e01f";
+}
+.icon-dndDisabled:before {
+	content: "\e020";
+}
+.icon-dndEnabled:before {
+	content: "\e021";
+}
+.icon-brightness:before {
+	content: "\e022";
+}
+.icon-hue:before {
+	content: "\e023";
+}
+.icon-mobilePresenter:before {
+	content: "\e024";
+}
+.icon-mobile:before {
+	content: "\e025";
+}
+.icon-isTalking:before {
+	content: "\e026";
+}
+.icon-leaveMeeting:before {
+	content: "\e027";
+}
+.icon-lineInUnmute:before {
+	content: "\e028";
+}
+.icon-homePhone:before {
+	content: "\e029";
+}
+.icon-max:before {
+	content: "\e02a";
+}
+.icon-min:before {
+	content: "\e02b";
+}
+.icon-audio:before {
+	content: "\e02c";
+}
+.icon-incomingCall:before {
+	content: "\e02d";
+}
+.icon-missedCall:before {
+	content: "\e02e";
+}
+.icon-alerting:before {
+	content: "\e02f";
+}
+.icon-offHook:before {
+	content: "\e030";
+}
+.icon-callForward:before {
+	content: "\e031";
+}
+.icon-allCalls:before {
+	content: "\e032";
+}
+.icon-outgoingCall:before {
+	content: "\e033";
+}
+.icon-callHistory:before {
+	content: "\e034";
+}
+.icon-redial:before {
+	content: "\e035";
+}
+.icon-attach:before {
+	content: "\e036";
+}
+.icon-meetingIdle:before {
+	content: "\e037";
+}
+.icon-meetingInProgress:before {
+	content: "\e038";
+}
+.icon-shareContent:before {
+	content: "\e039";
+}
+.icon-softPhone:before {
+	content: "\e03a";
+}
+.icon-wallpaper:before {
+	content: "\e03b";
+}
+.icon-genericFeature:before {
+	content: "\e03c";
+}
+.icon-sdio:before {
+	content: "\e03d";
+}
+.icon-recipientAdd:before {
+	content: "\e03e";
+}
+.icon-recipientRemove:before {
+	content: "\e03f";
+}
+.icon-secure:before {
+	content: "\e040";
+}
+.icon-wifi0:before {
+	content: "\e041";
+}
+.icon-wifi1:before {
+	content: "\e042";
+}
+.icon-wifi2:before {
+	content: "\e043";
+}
+.icon-wifi3:before {
+	content: "\e044";
+}
+.icon-wifi4:before {
+	content: "\e045";
+}
+.icon-lockKeys:before {
+	content: "\e046";
+}
+.icon-rtprx:before {
+	content: "\e047";
+}
+.icon-rtptx:before {
+	content: "\e048";
+}
+.icon-rtp_rxtx_Duplex:before {
+	content: "\e049";
+}
+.icon-transfer:before {
+	content: "\e04a";
+}
+.icon-download:before {
+	content: "\e04b";
+}
+.icon-videoMute:before {
+	content: "\e04c";
+}
+.icon-alertMinor:before {
+	content: "\e04d";
+}
+.icon-edit:before {
+	content: "\e04e";
+}
+.icon-info:before {
+	content: "\e04f";
+}
+.icon-fastForward:before {
+	content: "\e050";
+}
+.icon-fastRewind:before {
+	content: "\e051";
+}
+.icon-play:before {
+	content: "\e052";
+}
+.icon-record:before {
+	content: "\e053";
+}
+.icon-skipBackward:before {
+	content: "\e054";
+}
+.icon-skipForward:before {
+	content: "\e055";
+}
+.icon-stop:before {
+	content: "\e056";
+}
+.icon-pause:before {
+	content: "\e057";
+}
+.icon-recording:before {
+	content: "\e058";
+}
+.icon-privacy:before {
+	content: "\e059";
+}
+.icon-application:before {
+	content: "\e05a";
+}
+.icon-applications:before {
+	font-family: "icon-font";
+	content: "\e05b";
+}
+.icon-runningApplication:before {
+	font-family: "icon-font";
+	content: "\e05c";
+}
+.icon-intercom:before {
+	content: "\e05d";
+}
+.icon-intercomWhisper:before {
+	font-family: "icon-font";
+	content: "\e05e";
+}
+.icon-intercomDuplexConnected:before {
+	content: "\e05f";
+}
+.icon-voicemail:before {
+	content: "\e060";
+}
+.icon-voicemailHeard:before {
+	content: "\e061";
+}
+.icon-voicemailPrivate:before {
+	content: "\e062";
+}
+.icon-voicemailPrivateHeard:before {
+	content: "\e063";
+}
+.icon-battery:before {
+	content: "\e064";
+}
+.icon-PowerOnOff:before {
+	content: "\e065";
+}
+.icon-putOnHold:before {
+	content: "\e066";
+}
+.icon-callDetail:before {
+	content: "\e067";
+}
+.icon-speedDetail:before {
+	content: "\e068";
+}
+.icon-endcall:before {
+	content: "\e000";
+}
+.icon-directory:before {
+	content: "\e001";
+}
+.icon-newcall:before {
+	content: "\e069";
+}
+.icon-chat:before {
+	content: "\e06a";
+}
+.icon-settings:before {
+	content: "\e06b";
+}
+.icon-volume:before {
+	content: "\e06c";
+}
+.icon-email:before {
+	content: "\e06d";
+}
+.icon-user:before {
+	content: "\e06e";
+}
+.icon-conference:before {
+	content: "\e06f";
+}
+.icon-display:before {
+	content: "\e070";
+}
+.icon-userRoster:before {
+	content: "\e071";
+}
+.icon-userBlocked:before {
+	content: "\e072";
+}
+.icon-share:before {
+	content: "\e073";
+}
+.icon-otherPhone:before {
+	content: "\e074";
+}
+.icon-hyperlink:before {
+	content: "\e075";
+}
+.icon-invalid:before {
+	font-family: icon-font;
+	content: "\e069";
+}
+.icon-valid:before {
+	font-family: icon-font;
+	content: "\e075";
+}
+.icon-headset:before {
+	content: "\e077";
+}
+.icon-radio:before {
+	content: "\e078";
+}
+.icon-Untitled-1:before {
+	font-family: icon-font;
+	content: "\e079";
+}
+/* rmohapat added*/
+.icon-close:before {	
+	content: "\E002";
+	font-family: icon-font;
+}
+.icon-triangle:before {
+	font-family: icon-font;
+	content: "\E000";
+}
+.icon-pin:before{
+	font-family: icon-font;
+	content: "\E074";	
+}
+.icon-help:before{
+	font-family: icon-font;
+	content: "\E068";
+	font-size: 1.6rem;	
+}
+.icon-cisco:before {
+	font-family: icon-font;
+	content: "\E001";
+}
+
+/* Icon fonts used */
+.xwtlite .icon-cisco-search:before {
+	font-family: icon-font;
+	content: "\e05B";
+}
+.xwtlite .icon-spinner:before {
+	font-family: "icon-font";
+	content: "\e088";
+}
+.xwtlite .icon-index:before {
+	font-family: "icon-font";
+	content: "\e08a";
+}
+.xwtlite .icon-hamburger:before {
+	font-family: "icon-font";
+	content: "\e08b";
+}
+.xwtlite .icon-addFilter:before {
+	font-family: "icon-font";
+	content: "\e08c";
+}
+.xwtlite .icon-quickview-popover:before {
+	font-family: "icon-font";
+	content: "\e094";
+}
+.xwtlite .icon-360view:before {
+	font-family: "icon-font";
+	content: "\e094";
+}
+.xwtlite .icon-drilldown-select:before {
+	font-family: "icon-font";
+	content: "\e098";
+}
+.xwtlite .icon-drilldown:before {
+	font-family: "icon-font";
+	content: "\e07e";
+}
+.xwtlite .icon-resize-handle:before {
+	font-family: "icon-font";
+	content: "\e099";
+}
+.xwtlite .icon-list-view:before {
+	font-family: "icon-font";
+	content: "\e0ea";
+}
+.xwtlite .icon-tree-view:before {
+	font-family: "icon-font";
+	content: "\e0eb";
+}
+.xwtlite .icon-gear:before {
+	font-family: "icon-font";
+	content: "\e087";
+}
+.xwtlite .icon-action:before {
+	font-family: "icon-font";
+	content: "\e0c8";
+}
+.xwtlite .icon-starfill:before{
+	font-family: "icon-font";	
+	content: "\e083";
+}
+.xwtlite .icon-starnofill:before{
+	font-family: "icon-font";
+	content: "\e082"
+}
+.xwtlite .icon-starhalffill:before{
+	font-family: "icon-font";
+	content: "\e081";
+}
+.xwtlite .icon-minus:before{
+	font-family: "icon-font";
+	content: "\e08d";
+}
+.xwtlite .icon-plus:before{
+	font-family: "icon-font";
+	content: "\e08f";
+}
+.xwtlite .icon-refresh:before{
+	font-family: "icon-font";
+	content: "\e07a";
+}
+.xwtlite .icon-major:before {
+	font-family: "icon-font";
+	content: "\e089";
+}
+.xwtlite .icon-minor:before {
+	font-family: "icon-font";
+	content: "\e012";
+}
+.xwtlite .icon-warning:before {
+	font-family: "icon-font";
+	content: "\e0e5";
+}
+.xwtlite .icon-information:before {
+	font-family: "icon-font";
+	content: "\e014";
+}
+.xwtlite .icon-unknown:before {
+	font-family: "icon-font";
+	content: "\e0e4";
+}
+.xwtlite .icon-arrow:before {
+	font-family: "icon-font";
+	content: "\e07f";
+}
+.xwtlite .icon-forum-question:before{
+	font-family: "icon-font";
+	content: "\e0bb";
+}
+.xwtlite .icon-headphone:before{
+	font-family: "icon-font";
+	content: "\e0bb";
+}
+
+.xwtlite .icon-cisco-menu:before {
+	font-family: icon-font;
+	content: "\E0E9"
+	
+}
+/*Ends here*/
+
+
+/* These are the fonts created for CiscoSans */
+
+@font-face {
+  font-family: 'CiscoSansRegular';
+  src: url('CiscoSansRegular/CiscoSansRegular.woff?version=0.0.1') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CiscoSansThin';
+  src: url('CiscoSansThin/CiscoSansThin.woff?version=0.0.1') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'CiscoSansRegular';
+		src: url('CiscoSansRegular/CiscoSansRegular.woff?version=0.0.1') format('woff');
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'CiscoSansThin';
+		src: url('CiscoSansThin/CiscoSansThin.woff?version=0.0.1') format('woff');
+	}
+}
+
