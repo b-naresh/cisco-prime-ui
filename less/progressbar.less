@@ -1,0 +1,56 @@
+.modal{.progress-wrap {margin:45% auto 0;}}
+
+.progress-wrap {
+    max-width: 33rem;
+    .well {
+	    padding: 1.5rem;
+	    border: 1px;
+	    border-radius: 0.3rem;
+	    opacity: 0.9;
+	    -webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    box-shadow: none;
+	    color: #333;
+	    background: #2a2a2a;
+	    color: #ffffff;
+	    
+	    &.light {
+		    background: #fff;
+		    -webkit-box-shadow: none;
+		    -moz-box-shadow: none;
+		    box-shadow: none;
+		    color: #333;
+		}
+		
+		p{
+		font: normal 16px Arial;
+		}
+	}
+	.progress {
+	    margin: 0;
+	    height: 1.0rem;
+	    background-image: linear-gradient(#646464 0%, #969696 40%);
+	}
+	
+	 .progress-bar {
+	    background-image: linear-gradient(#00c3ff 0%, #29abe2 28%, #0071bc 100%)!important;
+	    border: 1px solid #0071bc;
+	    box-shadow: none;
+	    border-radius: 0.3rem;
+	    	.progressOverlay {
+			    animation:  indeterminateLoader 4.5s infinite linear;
+			    -webkit-animation:  indeterminateLoader 4.5s infinite linear;
+			    background:  url("../images/indeterminate_bg.png") no-repeat;
+			    height: 1rem;
+			    opacity:  0.3;
+			    position:  relative;
+			    width: 10rem;
+			    z-index:  999;
+			    border:  none !important;
+			    top: -0.1rem;
+			}
+	}
+}
+
+
+
