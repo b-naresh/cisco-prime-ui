@@ -1,0 +1,338 @@
+<div class="row">
+    <div class="col-sm-12">
+        
+        <ol class="breadcrumb" id="breadcrumb"></ol>
+        <br/>
+        
+        <strong>Device Diagnostics</strong>
+        <br/><br/>
+    </div>
+    <div class="col-sm-12">
+        <div class="nav-tabs-wrap">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tabA" data-toggle="tab">Device Configuration</a></li>
+                <li><a href="#tabB" data-toggle="tab">Root Device Configuration</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabA">
+                    <br/>
+                    <form class="form-horizontal form-validate" role="form" data-xl-formtype="ajax">
+                        <div class="form-group">
+                            <label for="inputDeviceQuickView" class="col-sm-2 control-label">Device Protocol</label>
+                            <div class="col-sm-3 field">
+                                <input type="text" class="form-control" id="inputDeviceQuickView" value="10.1.100.1" placeholder="" disabled>
+                            </div>
+                            <div class="help-inline">
+                                <span class="icon-help"
+                                      rel="popover"
+                                      data-xl-content-id="popover-deviceQuickView"
+                                      data-xl-title="Small Content"
+                                      data-container="body"
+                                      data-toggle="popover"
+                                      data-placement="right"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDevicePopover" class="col-sm-2 control-label">Device IP</label>
+                            <div class="col-sm-3 field">
+                                <input type="text" class="form-control" id="inputDevicePopover" value="10.1.100.1" placeholder="">
+                            </div>
+                            <div class="help-inline">
+                                <span class="icon-quickview-popover"
+                                      rel="popover"
+                                      data-xl-content-id="popover-devicePopover"
+                                      data-xl-title="Small Content"
+                                      data-container="body"
+                                      data-toggle="popover"
+                                      data-placement="right"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputSingleTimeField" class="col-sm-2 control-label">Device Maintenance on</label>
+                            <div class="col-sm-3 field">
+                                <input type="text" class="form-control" id="inputSingleTimeField"
+                                       placeholder="" value="12:00:00 PST">
+                                <span class="help-block"><i>(hh:mm:ss ZZZ)</i></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Device Pin</label>
+                            <div class="col-sm-3 field">
+                                <input type="password" class="form-control" id="inputPassword"
+                                       placeholder="" value="111">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Device Type</label>
+                            <div class="col-sm-3 field">
+                                <div class="dropdown dropdownlist" rel="xl-dropdownlist">
+                                    <input type="text" class="form-control xl-dropdowninput"
+                                           placeholder="Text">
+                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a>Action</a></li>
+                                        <li><a>Another action</a></li>
+                                        <li><a>Hardware</a></li>
+                                        <li><a>New link</a></li>
+                                        <li><a>Software</a></li>
+                                        <li><a>Router</a></li>
+                                        <li><a>Switch</a></li>
+                                        <li><a>Modem</a></li>
+                                        <li><a>Ethernet</a></li>
+                                        <li><a>Internet</a></li>
+                                        <li><a>Workspace</a></li>
+                                        <li><a>Apple Mac Machine</a></li>
+                                        <li><a>Microsoft Server</a></li>
+                                        <li><a>Sony Playstation 4</a></li>
+                                        <li><a>Microsoft XBOX 360</a></li>
+                                        <li><a>Cisco Prime</a></li>
+                                        <li><a>Customize</a></li>
+                                        <li><a>Visualization</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Device Owner</label>
+                            <div class="col-sm-3 field">
+                                <input type="text" class="form-control" id="inputName" placeholder="" value="John Chambers">
+                            </div>
+                            <div class="help-inline">
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#userModal">User</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputIPV4" class="col-sm-2 control-label">Device Host</label>
+                            <div class="col-sm-3 field">
+                                <input type="text" class="form-control" id="inputIPV4" value="192.0.2.0" rel="ipv4"
+                                       data-title="Please provide valid ip address" pattern="^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" placeholder="IP Address">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-inline">
+                                <label class="col-sm-2 control-label">Due on</label>
+                                <div class="col-sm-3 xl-timeinputs">
+                                    
+                                    <div class="field">
+                                        <div class="dropdown dropdownlist" rel="xl-dropdownlist">
+                                            <input type="text" class="form-control xl-dropdowninput">
+                                            <button type="button" class="btn btn-default dropdown-toggle"
+                                                    data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a>1</a></li>
+                                                <li><a>2</a></li>
+                                                <li><a>3</a></li>
+                                                <li><a>4</a></li>
+                                                <li><a>5</a></li>
+                                                <li><a>6</a></li>
+                                                <li><a>7</a></li>
+                                                <li><a>8</a></li>
+                                                <li><a>9</a></li>
+                                                <li><a>10</a></li>
+                                                <li><a>11</a></li>
+                                                <li><a>12</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="dropdown dropdownlist" rel="xl-dropdownlist">
+                                            <input type="text" class="form-control xl-dropdowninput">
+                                            <button type="button" class="btn btn-default dropdown-toggle"
+                                                    data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a>1</a></li>
+                                                <li><a>2</a></li>
+                                                <li><a>3</a></li>
+                                                <li><a>4</a></li>
+                                                <li><a>5</a></li>
+                                                <li><a>6</a></li>
+                                                <li><a>7</a></li>
+                                                <li><a>8</a></li>
+                                                <li><a>9</a></li>
+                                                <li><a>10</a></li>
+                                                <li><a>11</a></li>
+                                                <li><a>12</a></li>
+                                                <li><a>13</a></li>
+                                                <li><a>14</a></li>
+                                                <li><a>15</a></li>
+                                                <li><a>16</a></li>
+                                                <li><a>17</a></li>
+                                                <li><a>18</a></li>
+                                                <li><a>19</a></li>
+                                                <li><a>20</a></li>
+                                                <li><a>21</a></li>
+                                                <li><a>22</a></li>
+                                                <li><a>23</a></li>
+                                                <li><a>24</a></li>
+                                                <li><a>25</a></li>
+                                                <li><a>26</a></li>
+                                                <li><a>27</a></li>
+                                                <li><a>28</a></li>
+                                                <li><a>29</a></li>
+                                                <li><a>30</a></li>
+                                                <li><a>31</a></li>
+                                                <li><a>32</a></li>
+                                                <li><a>33</a></li>
+                                                <li><a>34</a></li>
+                                                <li><a>35</a></li>
+                                                <li><a>36</a></li>
+                                                <li><a>37</a></li>
+                                                <li><a>38</a></li>
+                                                <li><a>39</a></li>
+                                                <li><a>40</a></li>
+                                                <li><a>41</a></li>
+                                                <li><a>42</a></li>
+                                                <li><a>43</a></li>
+                                                <li><a>44</a></li>
+                                                <li><a>45</a></li>
+                                                <li><a>46</a></li>
+                                                <li><a>47</a></li>
+                                                <li><a>48</a></li>
+                                                <li><a>49</a></li>
+                                                <li><a>50</a></li>
+                                                <li><a>51</a></li>
+                                                <li><a>52</a></li>
+                                                <li><a>53</a></li>
+                                                <li><a>54</a></li>
+                                                <li><a>55</a></li>
+                                                <li><a>56</a></li>
+                                                <li><a>57</a></li>
+                                                <li><a>58</a></li>
+                                                <li><a>59</a></li>
+                                                <li><a>60</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="dropdown dropdownlist" rel="xl-dropdownlist">
+                                            <input type="text" class="form-control xl-dropdowninput">
+                                            <button type="button" class="btn btn-default dropdown-toggle"
+                                                    data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a>AM</a></li>
+                                                <li><a>PM</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-3 field">
+                                <input class="btn btn-primary" type="submit" name="submit" value="Submit" formnovalidate="">
+                                <input class="btn btn-default" type="reset" name="submit" value="Reset">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane" id="tabB">
+                    Root device configuration tab is active now!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade xwtDialog" id="userModal" tabindex="-1"
+     role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        title="Cancel" aria-hidden="true"></button>
+                <h4 class="modal-title" id="userModalLabel">User</h4>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, fuga praesentium magni in deserunt. Iste, sapiente, iure et possimus aliquid expedita eum consequatur ducimus accusamus cum laboriosam in amet nemo!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"
+                        data-dismiss="modal">
+                    <div>Close</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="progressbarModal"
+     tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-center">
+        <div class="progress-wrap" data-xl-ref="progressbar">
+            <div class="well">
+                <p class=" text-center">
+                    Submitting form <span class="progress-percentage">0%</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow=""
+                         aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                        <span class="sr-only">0% Complete</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popover-deviceQuickView" class="hide">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac
+    neque in elit lacinia.
+</div>
+<div id="popover-devicePopover" class="hide">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac
+    neque in elit lacinia.
+</div>
+
+<script>
+jQuery(document).ready(function() {
+    
+    var toasterInst = new gXwt_lite.toaster();
+    
+    jQuery('#breadcrumb').breadcrumb({
+        items: [
+            {label: '<b>/ Home</b>'},
+            {label: '<b>Configuration</b>'},
+            {label: '<b>Asset Management</b>'},
+            {label: '<b>Device Diagnostics</b>'}
+        ],
+        ellipses : true,
+        ellipses_counter : 3
+    });
+    
+    jQuery(".xwtlite").on("xl.form.submit", function(e, data) {
+        if(data.valid) {
+            jQuery('#progressbarModal').modal('show');
+        } else {
+            toasterInst.show({
+                "type": "warning",
+                "title": "Errors on form",
+                "desc": "Description here"
+            });
+        }
+    });
+    
+    jQuery(".xwtlite").on("xl.progressbar.complete", function(e, data) {
+        jQuery('#progressbarModal').modal('hide');
+        // Submit form via ajax...
+        toasterInst.show({
+            "type": "success",
+            "title": "Success",
+            "desc": "Form submitted successfully"
+        });
+    });
+    
+    // Progressbar modal show
+    jQuery("#progressbarModal").on("shown.bs.modal", function() {
+        var el = jQuery('[data-xl-ref="progressbar"]', this);
+        new gXwt_lite.progressbar().timerBased(el);
+    });
+});
+</script>

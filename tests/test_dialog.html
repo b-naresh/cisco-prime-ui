@@ -1,0 +1,52 @@
+		<div class="row">
+			<div class="col-sm-12">
+				<strong>XWT Dialog</strong> <br> <br>Click
+				on the buttons below to open up a XWT Dialog<br> <br>
+			</div>
+			<div class="col-sm-12">
+				<button class="clickBtn btn btn-primary btn-lg" data-toggle="modal"
+					data-target="#myModal">Launch a Dialog</button>
+
+				<!-- Modal -->
+				<div class="modal fade xwtDialog" id="myModal" tabindex="-1"
+					role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									title="Cancel" aria-hidden="true"></button>
+								<h4 class="modal-title" id="myModalLabel">Device Information</h4>
+							</div>
+							<div class="modal-body">
+								<div class="nav-tabs-wrap">
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#home" data-toggle="tab">Device</a></li>
+										<li><a href="#profile" data-toggle="tab">Infrastructure</a></li>
+										<li><a href="#messages" data-toggle="tab">Hosting
+												location</a></li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="home">Device tab is
+											active now!</div>
+										<div class="tab-pane" id="profile">Infrastructure tab is
+											active now!</div>
+										<div class="tab-pane" id="messages">Hosting location tab
+											is active now!</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default">
+									<div>OK</div>
+								</button>
+								<button type="button" class="btn btn-primary"
+									data-dismiss="modal">
+									<div>Cancel</div>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>

@@ -1,0 +1,76 @@
+[data-xl-component="toaster"] {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    
+    .toaster {
+	    position: relative;
+	    bottom: 0;
+	    right: 0;
+	    width: 300px;
+	    margin: 0 2px 2px 0;
+	    .alert {
+		    margin: 0;
+		    padding: 15px;
+		    background: #2a2a2a;
+		    font: normal 12px Arial;
+		    color: #FFFFFF;
+		    cursor: pointer;
+		    filter: alpha(opacity=80) !important;
+		    opacity: .8 !important;
+		    height: 100%;
+		    -moz-border-radius: 3px;
+		    -webkit-border-radius: 3px;
+		    border-radius: 3px;
+		}
+		.close {
+		    position: absolute;
+		    top: 0;
+		    right: 1px;
+		    margin: 2px;
+		    color: #fff;
+		    opacity: 1;
+		    outline: none;
+		    
+		    font-family: icon-font;
+		    content: "\e002";
+		    font-size: 12px;
+		    font-weight: normal;
+		    &:hover {
+			    opacity: 1;
+			}
+		}	
+		.toaster-title {
+		    margin: 0 0 0 39px;
+		}	
+		.toaster-description {
+		    margin: 0 0 0 39px;
+		}
+		.toaster-message {
+		    position: relative;
+		    &:before {
+			    color: #56c1f1;
+			    content: "\e014";
+			    font-family: icon-font;
+			    font-size: 2.4rem;
+			    display: inline-block;
+			    float: left;
+			    position: absolute;
+			    top: 42%;
+			}
+		}
+	}
+		.toaster-info .toaster-message:before {
+		    color: #56c1f1;
+		    content: "\e014";
+		}
+		.toaster-success .toaster-message:before {
+		    color: #7CBC59;
+		    content: "\e075";
+		}
+		.toaster-warning .toaster-message:before {
+		    color: #ffcd00;
+		    content: "\e012";
+		}
+}
